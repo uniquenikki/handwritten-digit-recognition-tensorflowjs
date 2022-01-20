@@ -1,8 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import { Provider } from 'react-redux';
 import configureStore from '../store/configureStore';
-import Mnist from './mnist';
+import { Math1 } from './sum';
 
 window.BizCharts.track(false);
 
@@ -15,9 +14,12 @@ const App = class App extends React.Component {
 
   render() {
     return (
-      <Provider store={this.store}>
-        <Mnist />
-      </Provider>
+      <Math1 />
+
+    // <Provider store={this.store}>
+
+    //   <Mnist />
+    // </Provider>
     );
   }
 };
